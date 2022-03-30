@@ -1,9 +1,13 @@
 // give the user a nice default project!
-ThisBuild / organization := "com.yadavan88"
-ThisBuild / scalaVersion := "2.13.7"
+ThisBuild / organization := "$package$"
+ThisBuild / scalaVersion := "$scalaVersion$"
 
 lazy val root = (project in file(".")).
   settings(
     name := "scala-app-package",
     assembly / mainClass := Some("$package$.app.PackagedApp")
   )
+
+libraryDependencies ++= Seq(
+  "org.scalameta" %% "umunit" % "$munitVersion$" % Test
+)  
