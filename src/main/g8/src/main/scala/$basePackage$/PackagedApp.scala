@@ -1,4 +1,4 @@
 package $basePackage$.app
-object PackagedApp {
+object PackagedApp extends App {
     println("Hello, World! From a simple packaged application")
 } 
