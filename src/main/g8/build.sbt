@@ -9,5 +9,5 @@ lazy val root = (project in file(".")).
   )
 
 libraryDependencies ++= Seq(
-  "org.scalameta" %% "umunit" % "$munitVersion$" % Test
+  "org.scalameta" %% "munit" % "$munitVersion$" % Test
 )  
