@@ -4,5 +4,6 @@ ThisBuild / scalaVersion := "2.13.7"
 
 lazy val root = (project in file(".")).
   settings(
-    name := "scala-app-package"
+    name := "scala-app-package",
+    assembly / mainClass := Some("$package$.app.PackagedApp")
   )
