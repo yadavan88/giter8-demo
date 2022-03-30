@@ -1,8 +1,8 @@
 // give the user a nice default project!
-ThisBuild / organization := "com.example"
-ThisBuild / scalaVersion := "2.12.8"
+ThisBuild / organization := "com.yadavan88"
+ThisBuild / scalaVersion := "2.13.7"
 
 lazy val root = (project in file(".")).
   settings(
-    name := "g8-demo"
+    name := "scala-app-package"
   )

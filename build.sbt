@@ -4,7 +4,7 @@
 lazy val root = (project in file("."))
   .enablePlugins(ScriptedPlugin)
   .settings(
-    name := "g8-demo",
+    name := "giter8-template-demo",
     test in Test := {
       val _ = (g8Test in Test).toTask("").value
     },
